@@ -1,0 +1,31 @@
+/*content-box allows the child element to go outside its parent container. border-box contains the child within its borders.*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background: #f5f5f5;
+}
+
+
+
+/*this is the parent container that has 9 children  with a class of "item"*/
+.container {
+    max-width: 960px;
+    margin: 100px auto;
+    padding: 10px;
+
+}
+.item {
+background: steelblue;
+color: #fff;
+font-size: 20px;
+padding: 20px;
+border: skyblue 1px solid;
+}
+

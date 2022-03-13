@@ -8,24 +8,51 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     line-height: 1.5;
-    color: #333;
-    background: #f5f5f5;
+    color: white;
+    background: black;
 }
 
 
 
 /*this is the parent container that has 9 children  with a class of "item"*/
 .container {
-    max-width: 960px;
-    margin: 100px auto;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
-    /*column-gap: 10px;
-    row-gap: 10px;*/
-    gap: 10px;
+max-width: 960px;
+margin: 100px auto;
+padding: 10px;
+display: grid;
+grid-template-columns: repeat(3, 1fr) ;
+gap: 10px;
+/* Align-items attribute allows for items to be moved along the vertical axis within the div. the default is to start off at the start: top. (start:top, center:middle end:bottom) ***** if you have grid-template-rows: attribute applied to the container all rows will align how the have been defined */
+
+align-items: center;
+ 
+/* justify content move the whole parent container along the horizontal axis to the three positions as align-items (start center end)*/
+/* justify-content: space-around; */
+
+
+
+/*column-gap: 10px;
+row-gap: 10px;*/
+
+
+/* when grid-auto-rows is defined if the boxes had the background it would appear that the text was going down the inside the container. min max is used on columns and rows colums (200px) then rows (auto)*/
+
+
+/* grid-auto-rows:minmax( 200px, auto) */
+
+
+/*with grid template rows, px, %, fr can be used. keep in mind the content of the div will determine the height then you can align with the alignment properties*/
+
+/* 
+grid-template-rows:repeat(3, 1fr); */
 
 }
+
+
+
+
+
+
 /* At this point i'm supposed to have a back ground colr of steel blue displayed, yet my divisions are working and in my css file i have no error displayed dont understand why its not displaying the properties defined in the .item class.*/
 .item {
 background: steelblue;
@@ -34,4 +61,16 @@ font-size: 20px;
 padding: 20px;
 border: skyblue 1px solid;
 }
+
+
+/*A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s)  */
+
+.item:nth-of-type(2) {
+    height: 100px;
+    width: 100px;
+
+   
+
+}
+/* Time mark 16:58 on tutorial video. get the background issue resoveld so you can properly see what is going on. Travesty Media css grid crash course 2022 */
 

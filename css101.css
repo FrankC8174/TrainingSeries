@@ -19,8 +19,14 @@ body {
     max-width: 960px;
     margin: 100px auto;
     padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    /*column-gap: 10px;
+    row-gap: 10px;*/
+    gap: 10px;
 
 }
+/* At this point i'm supposed to have a back ground colr of steel blue displayed, yet my divisions are working and in my css file i have no error displayed dont understand why its not displaying the properties defined in the .item class.*/
 .item {
 background: steelblue;
 color: #fff;
